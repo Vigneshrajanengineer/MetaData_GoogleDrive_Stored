@@ -10,7 +10,7 @@ st.title("Multi-User Excel Merger with Admin Access & Version Control")
 DATA_DIR = "merged_versions"
 os.makedirs(DATA_DIR, exist_ok=True)
 MASTER_FILE = os.path.join(DATA_DIR, "master_merged_data.xlsx")
-ADMIN_PASSWORD = "admin123"  # Change this in production
+ADMIN_PASSWORD = "Vignesh@1234"  # Change this in production
 
 # Load existing data
 if os.path.exists(MASTER_FILE):
