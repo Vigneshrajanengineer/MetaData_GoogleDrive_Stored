@@ -5,7 +5,7 @@ from datetime import datetime
 import os
 
 st.set_page_config(page_title="Advanced Excel Merger", layout="centered")
-st.title("Multi-User Excel Merger with Admin Access & Version Control")
+st.title("Anti_profing_MetaData")
 
 DATA_DIR = "merged_versions"
 os.makedirs(DATA_DIR, exist_ok=True)
@@ -18,8 +18,8 @@ if os.path.exists(MASTER_FILE):
 else:
     master_df = pd.DataFrame()
 
-uploaded_files = st.file_uploader("Upload Excel files", type=["xlsx", "xls"], accept_multiple_files=True)
-user_name = st.text_input("Enter your name or identifier:")
+uploaded_files = st.file_uploader("Upload MetaData Excel files Here", type=["xlsx", "xls"], accept_multiple_files=True)
+user_name = st.text_input("Enter your name:")
 sheet_name = st.text_input("Sheet name to merge (optional)", value="")
 
 if st.button("Merge Files"):
