@@ -4,7 +4,7 @@ from io import BytesIO
 from datetime import datetime
 import os
 
-st.set_page_config(page_title="Advanced Excel Merger", layout="centered")
+st.set_page_config(page_title="Anti_profing_MetaData", layout="centered", page_icon=:open_file_folder:)
 st.title("Anti_profing_MetaData")
 
 DATA_DIR = "merged_versions"
@@ -70,5 +70,6 @@ if admin_pass == ADMIN_PASSWORD:
                 st.download_button(f"Download {file}", f, file)
     else:
         st.info("No merged data available.")
+        st.balloons()
 elif admin_pass and admin_pass != ADMIN_PASSWORD:
     st.error("Incorrect admin password.")
