@@ -18,7 +18,7 @@ if os.path.exists(MASTER_FILE):
 else:
     master_df = pd.DataFrame()
 
-uploaded_files = st.file_uploader("Upload MetaData Excel files Here", type=["xlsx", "xls"], accept_multiple_files=True)
+uploaded_files = st.file_uploader("Upload MetaData Excel files here (Range between:02500-03000)", type=["xlsx", "xls"], accept_multiple_files=True)
 user_name = st.text_input("Enter your name:")
 sheet_name = st.text_input("Sheet name to merge (optional)", value="")
 
