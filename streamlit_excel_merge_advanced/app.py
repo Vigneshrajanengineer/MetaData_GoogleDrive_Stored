@@ -4,8 +4,8 @@ from io import BytesIO
 from datetime import datetime
 import os
 
-st.set_page_config(page_title="Anti_profing_MetaData", layout="centered", page_icon=:open_file_folder:)
-st.title(page_icon=:open_file_folder:,"Anti_profing_MetaData")
+st.set_page_config(page_title="Anti_profing_MetaData", layout="centered")
+st.title("Anti_profing_MetaData")
 
 DATA_DIR = "merged_versions"
 os.makedirs(DATA_DIR, exist_ok=True)
